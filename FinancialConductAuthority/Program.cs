@@ -138,8 +138,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}";
             var response = await client.GetStringAsync(query);
@@ -162,8 +162,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Names";
             var response = await client.GetStringAsync(query);
@@ -187,8 +187,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Address";
             var response = await client.GetStringAsync(query);
@@ -211,8 +211,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Individuals";
             var response = await client.GetStringAsync(query);
@@ -235,8 +235,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Permissions";
             var response = await client.GetStringAsync(query);
@@ -259,8 +259,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Requirements";
             var response = await client.GetStringAsync(query);
@@ -283,8 +283,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Regulators";
             var response = await client.GetStringAsync(query);
@@ -307,8 +307,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Passports";
             var response = await client.GetStringAsync(query);
@@ -347,8 +347,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Waivers";
             var response = await client.GetStringAsync(query);
@@ -371,8 +371,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Exclusions";
             var response = await client.GetStringAsync(query);
@@ -396,8 +396,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/DisciplinaryHistory";
             var response = await client.GetStringAsync(query);
@@ -420,8 +420,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/AR";
             var response = await client.GetStringAsync(query);
@@ -444,8 +444,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "ira.lukhezo@brokernetwork.co.uk");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "64b5bb69fc3efad3cf253931f67bbd8e");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
            
             var iQuery = $"V0.1/Firm/{firmReferenceNumber}/Individuals";
             var iResponse = await client.GetStringAsync(iQuery);
