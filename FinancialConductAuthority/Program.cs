@@ -138,7 +138,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}";
@@ -162,7 +162,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Names";
@@ -187,7 +187,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Address";
@@ -211,7 +211,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Individuals";
@@ -235,7 +235,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Permissions";
@@ -259,7 +259,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Requirements";
@@ -283,7 +283,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Regulators";
@@ -307,7 +307,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Passports";
@@ -347,7 +347,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Waivers";
@@ -371,7 +371,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Exclusions";
@@ -396,7 +396,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/DisciplinaryHistory";
@@ -420,7 +420,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/AR";
@@ -444,7 +444,7 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESSS_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
             client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
            
             var iQuery = $"V0.1/Firm/{firmReferenceNumber}/Individuals";
