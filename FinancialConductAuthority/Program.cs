@@ -13,12 +13,14 @@ namespace FinancialConductAuthority
     class Program
     {
         private static readonly Uri BaseAddress = new Uri("https://register.fca.org.uk/services/");
+        private static readonly string x_auth_email = "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH";
+        private static readonly string x_auth_key = "API_KEY_YOU_SIGNED_UP_WITH";
 
         static async Task Main(string[] args)
         {
             Console.Title = "Financial Conduct Authority - Proof of Concept v " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             bool isNumeric;
-            string firmReferenceNumber; 
+            string firmReferenceNumber;
             do
             {
                 Console.Write("Please enter a firm reference number:");
@@ -45,7 +47,6 @@ namespace FinancialConductAuthority
 
 
             } while (cki.Key != ConsoleKey.Y && cki.Key != ConsoleKey.N);
-
 
             Console.WriteLine();
 
@@ -138,8 +139,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}";
             var response = await client.GetStringAsync(query);
@@ -162,8 +163,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Names";
             var response = await client.GetStringAsync(query);
@@ -171,7 +172,7 @@ namespace FinancialConductAuthority
 
             //Just for Viewing in Console Screen
             string formattedReponse = JsonConvert.SerializeObject(obj, Formatting.Indented);
-        
+
             if (isFormated)
             {
                 Console.WriteLine(formattedReponse);
@@ -187,8 +188,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Address";
             var response = await client.GetStringAsync(query);
@@ -211,8 +212,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Individuals";
             var response = await client.GetStringAsync(query);
@@ -235,8 +236,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Permissions";
             var response = await client.GetStringAsync(query);
@@ -259,8 +260,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Requirements";
             var response = await client.GetStringAsync(query);
@@ -283,8 +284,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Regulators";
             var response = await client.GetStringAsync(query);
@@ -307,8 +308,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Passports";
             var response = await client.GetStringAsync(query);
@@ -316,7 +317,7 @@ namespace FinancialConductAuthority
 
             string formattedReponse = JsonConvert.SerializeObject(obj, Formatting.Indented);
 
-   
+
 
             foreach (var d in obj.Data)
             {
@@ -347,8 +348,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Waivers";
             var response = await client.GetStringAsync(query);
@@ -371,8 +372,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/Exclusions";
             var response = await client.GetStringAsync(query);
@@ -396,8 +397,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/DisciplinaryHistory";
             var response = await client.GetStringAsync(query);
@@ -420,8 +421,8 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
 
             var query = $"V0.1/Firm/{firmReferenceNumber}/AR";
             var response = await client.GetStringAsync(query);
@@ -444,13 +445,13 @@ namespace FinancialConductAuthority
             HttpClient client = new HttpClient { BaseAddress = BaseAddress };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Add("X-Auth-Email", "E_MAIL_ADDRESS_YOU_SIGNED_UP_WITH");
-            client.DefaultRequestHeaders.Add("X-Auth-Key", "API_KEY_YOU_SIGNED_UP_WITH");
-           
+            client.DefaultRequestHeaders.Add("X-Auth-Email", x_auth_email);
+            client.DefaultRequestHeaders.Add("X-Auth-Key", x_auth_key);
+
             var iQuery = $"V0.1/Firm/{firmReferenceNumber}/Individuals";
             var iResponse = await client.GetStringAsync(iQuery);
             var iObj = JsonConvert.DeserializeObject<IndividualsResponse>(iResponse);
-          
+
             string formattedReponse = "";
             //string formattedReponse = JsonConvert.SerializeObject(iObj, Formatting.Indented);
 
@@ -461,7 +462,7 @@ namespace FinancialConductAuthority
                 var obj = JsonConvert.DeserializeObject<InvidualDetailsResponse>(response);
                 formattedReponse += JsonConvert.SerializeObject(obj, Formatting.Indented);
             }
-            
+
             //foreach (var info in iObj.Data)
             //{
             //    var cfQuery = $"V0.1/Individuals/{info.IRN}/CF";
